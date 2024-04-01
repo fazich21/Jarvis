@@ -24,14 +24,14 @@ def main():
             #     j.date()
             elif 'email' in query:
                 email_list = {
-                    'haris': 'harismunib8@gmail.com',
-                    'farooq': '35296@iqraisb.edu.pk',
-                    'ahmed': 'ahmedarif01010101@gmail.com',
-                    'anique': 'aniqueabbasi575@gmail.com',
-                    'faizan': 'muhammadfaizanfazi869@gmail.com',
-                    'umair': 'Rajaumair6013@gmail.com',
-                    'ali': 'muhammadalikhan310@gmail.com',
-                    'hassan':'hassanasifraja@gamail.com'
+                    'haris': 'harir@gmail.com',
+                    'farooq': 'farooq@iqraisb.edu.pk',
+                    'ahmed': 'ahmed@gmail.com',
+                    'anique': 'anique@gmail.com',
+                    'faizan': 'faizan@gmail.com',
+                    'umair': 'Raja@gmail.com',
+                    'ali': 'ali@gmail.com',
+                    'hassan':'hassan@gamail.com'
                 }
                 try:
                     j.speak("to whom I send the mail")
