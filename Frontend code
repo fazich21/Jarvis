@@ -13,7 +13,7 @@ def main():
         call_jarvis()
     def call_jarvis():
         j = jarvis()
-        # voice = int(input("Enter 1 for male or 2 for female voice: "))
+        # voice = int(input("Enter 1 for Male or 2 for Female Voice: "))
         j.getvoices()
         j.wishme()
         while True:
@@ -34,7 +34,7 @@ def main():
                     'hassan':'hassan@gamail.com'
                 }
                 try:
-                    j.speak("to whom I send the mail")
+                    j.speak("To whom I send the mail")
                     name = j.takecommandCMD().lower()
                     receiver = email_list[name]
                     j.speak("what is the subject of the mail")
@@ -55,7 +55,7 @@ def main():
             elif 'search' in query:
                 j.googlesearch()
             elif 'youtube' in query:
-                j.speak("what should I play on youtube")
+                j.speak("What Can I play on youtube")
                 topic = j.takecommandCMD().lower()
                 pywhatkit.playonyt(topic)
             elif 'weather' in query:
