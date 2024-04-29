@@ -20,7 +20,7 @@ class jarvis:
         engine.say(audio)
         engine.runAndWait()
     def getvoices(self):
-        voices = engine.getProperty('voices')
+        Voices = engine.getProperty('Voices')
         engine.setProperty('voice', voices[1].id)
     def time(self):
         Time = datetime.datetime.now().strftime("%I:%M:%S")
@@ -29,19 +29,19 @@ class jarvis:
     def greeting(self):
         hour = datetime.datetime.now().hour
         if 6 <= hour < 12:
-            self.speak("good morning ")
+            self.speak("Good Morning ")
         elif hour >= 12 and hour < 18:
-            self.speak("good afternoon")
+            self.speak("Good Afternoon")
         elif hour >= 18 and hour < 24:
-            self.speak("good evening ")
+            self.speak("Good Evening ")
         else:
-            self.speak("good night ")
+            self.speak("Good Night ")
     def wishme(self):
-        self.speak("welcome back sir")
+        self.speak("Welcome Back Sir")
         # self.time()
         # self.date()
         self.greeting()
-        self.speak("jarvis at your service how can i help you")
+        self.speak("Jarvis at your service how can I help you")
     def takecommandCMD(self):
         query = input("please tell me how can i help you?")
         return query
