@@ -13,7 +13,7 @@ def main():
         call_jarvis()
     def call_jarvis():
         j = jarvis()
-        # voice = int(input("Enter 1 for Male or 2 for Female Voice: "))
+        # voice = int(input("Enter 1 For Male or 2 For Female Voice: "))
         j.getvoices()
         j.wishme()
         while True:
@@ -34,7 +34,7 @@ def main():
                     'hassan':'hassan@gamail.com'
                 }
                 try:
-                    j.speak("To whom I send the mail")
+                    j.speak("To Whom I send the mail")
                     name = j.takecommandCMD().lower()
                     receiver = email_list[name]
                     j.speak("what is the subject of the mail")
